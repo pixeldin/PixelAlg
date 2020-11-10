@@ -2,9 +2,8 @@ package lru_cache
 
 import (
 	"fmt"
-	"testing"
-
 	"github.com/stretchr/testify/assert"
+	"testing"
 )
 
 func Test_Hostbit(t *testing.T) {
