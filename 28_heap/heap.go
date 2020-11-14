@@ -43,7 +43,7 @@ func (heap *Heap) removeMax() {
 		return
 	}
 
-	//swap max and last
+	//hswap max and last
 	swap(heap.a, 1, heap.count)
 	heap.count--
 
@@ -75,7 +75,7 @@ func heapifyUpToDown(a []int, count int) {
 
 }
 
-//swap two elements
+//hswap two elements
 func swap(a []int, i int, j int) {
 	tmp := a[i]
 	a[i] = a[j]
