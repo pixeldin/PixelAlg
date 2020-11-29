@@ -11,5 +11,4 @@ func TestMergeSort(t *testing.T) {
 	arr = []int{7, 1, 3, 5}
 	MergeSort(arr)
 	t.Log(arr)
-
 }
