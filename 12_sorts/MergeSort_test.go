@@ -1,13 +1,22 @@
 package _2_sorts
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+	"time"
+)
 
 func TestMergeSort(t *testing.T) {
-	arr := []int{5, 4}
-	//MergeSort(arr)
-	//t.Log(arr)
-	//arr = []int{5, 4, 3, 2, 1}
-	arr = []int{7, 1, 3, 5}
+	defer PrintTimeCost("mergesort")()
+	arr := []int{7, 1, 3, 5}
 	MergeSort(arr)
+	time.Sleep(200 * time.Millisecond)
 	t.Log(arr)
+}
+
+func PrintTimeCost(fname string) func() {
+	start := time.Now()
+	return func() {
+		fmt.Printf("Cost time: %v(ms), from %s\n", time.Since(start).Milliseconds(), fname)
+	}
 }
