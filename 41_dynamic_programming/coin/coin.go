@@ -14,7 +14,7 @@ func choice(res int) int {
 		if res > c {
 			continue
 		}
-		res =
+		//res =
 		if res == 0 {
 			return 1
 		}
