@@ -6,6 +6,10 @@ func main()  {
 	test := []int{1,9,3,4,8,10}
 	sum := twoSum(test, 18)
 	fmt.Print(sum)
+	s2 := betterTwoSum(test, 10)
+	fmt.Print(s2)
+	s2 = betterTwoSum(test, 18)
+	fmt.Print(s2)
 }
 
 func twoSum(nums []int, target int) []int {
@@ -27,10 +31,10 @@ func betterTwoSum(nums []int, target int) []int {
 	m := make(map[int]int, 0)
 	for i := 0; i < len(nums); i++ {
 		love := target - nums[i]
-		if m[love] == love {
+		if _, ok:= m[love]; ok {
 			return []int{m[love], i}
 		}
-		m[nums[i]] = love
+		m[nums[i]] = i
 	}
 	return nil
 }
