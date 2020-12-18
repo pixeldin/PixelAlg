@@ -21,12 +21,11 @@ func ThreeSum(nums []int) [][]int {
 	return ret
 }
 
-
 /*
 	1. 去重并且统计各自频率
 	2. 排序
 	3. 拆分为 0*3/2a+b/a+2b/abc三情况
- */
+*/
 func ThreeSumV(nums []int) [][]int {
 	res := [][]int{}
 	counter := map[int]int{}
@@ -50,15 +49,18 @@ func ThreeSumV(nums []int) [][]int {
 		for j := i + 1; j < len(uniqNums); j++ {
 			if (uniqNums[i]*2+uniqNums[j] == 0) && counter[uniqNums[i]] == 2 {
 				res = append(res, []int{uniqNums[i], uniqNums[i], uniqNums[j]})
+				continue
 			}
 			if (uniqNums[j]*2+uniqNums[i] == 0) && counter[uniqNums[j]] == 2 {
 				res = append(res, []int{uniqNums[i], uniqNums[j], uniqNums[j]})
+				continue
 			}
 			// u[j] > u[i] !
 			love := 0 - (uniqNums[i] + uniqNums[j])
 			// ignore 2u[j] + u[i] = 0 (love = u[j])
 			if love > uniqNums[j] && counter[love] > 0 {
 				res = append(res, []int{uniqNums[i], uniqNums[j], love})
+				continue
 			}
 		}
 	}
