@@ -1,4 +1,4 @@
-package main
+package array
 
 import (
 	"fmt"
@@ -69,7 +69,6 @@ func ThreeSumV(nums []int) [][]int {
 	return res
 }
 
-
 func ThreeSumLocal(nums []int) [][]int {
 	// 词频map
 	m := make(map[int]int, 0)
@@ -90,7 +89,7 @@ func ThreeSumLocal(nums []int) [][]int {
 		// 0 + 0 + 0
 		if uiqS[i] == 0 && m[uiqS[i]] > 3 {
 			//fmt.Println("got 0,0,0")
-			ret = append(ret, []int{0,0,0})
+			ret = append(ret, []int{0, 0, 0})
 		}
 		for j := i + 1; j < len(uiqS); j++ {
 			// 2a+b or 2b+a

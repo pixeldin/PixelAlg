@@ -1,4 +1,4 @@
-package main
+package array
 
 func TwoSum(nums []int, target int) []int {
 	tag := make([]int, 2)
