@@ -3,6 +3,7 @@ package main
 import (
 	arr "PixelAlg/00_LeetCode/array"
 	string2 "PixelAlg/00_LeetCode/string"
+	"PixelAlg/00_LeetCode/tree"
 	"fmt"
 	"testing"
 )
@@ -33,4 +34,8 @@ func TestThreeSumClosestlocal(t *testing.T) {
 
 func TestString(t *testing.T) {
 	string2.TestLocal()
+}
+
+func TestTree(t *testing.T) {
+	tree.TestMinTravel()
 }
