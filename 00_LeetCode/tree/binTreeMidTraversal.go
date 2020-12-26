@@ -1,6 +1,8 @@
 package tree
 
-import "fmt"
+import (
+	"fmt"
+)
 
 /**
 * Definition for a binary tree node.
@@ -17,6 +19,7 @@ func TestMinTravel() {
 	fmt.Println(traversal)
 }
 
+// 中序遍历
 func inorderTraversal(root *TreeNode) []int {
 	ret := make([]int, 0)
 	midTraversal(root, &ret)
@@ -49,7 +52,7 @@ func buildTree() *TreeNode {
 		nil,
 	}
 	root := TreeNode{
-		1,
+		2,
 		nil,
 		&right,
 	}
