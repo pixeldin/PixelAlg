@@ -32,6 +32,7 @@ func lengthOfLongestSubstring(s string) int {
 	return most
 }
 
+// input = "anbiajbcan"
 func lengthOfLongestSubstring_todo(s string) int {
 	charLocation := make(map[byte]int, 0)
 	most := 0
