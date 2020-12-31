@@ -39,5 +39,6 @@ func TestString(t *testing.T) {
 func TestTree(t *testing.T) {
 	//tree.TestMinTravel()
 	//tree.TestValidBST()
-	tree.TestisSameTree()
+	//tree.TestisSameTree()
+	tree.TestMaxDepth()
 }
