@@ -4,6 +4,7 @@ import (
 	arr "PixelAlg/00_LeetCode/array"
 	string2 "PixelAlg/00_LeetCode/string"
 	"PixelAlg/00_LeetCode/tree"
+	"PixelAlg/00_LeetCode/two_pointer"
 	"fmt"
 	"testing"
 )
@@ -41,4 +42,9 @@ func TestTree(t *testing.T) {
 	//tree.TestValidBST()
 	//tree.TestisSameTree()
 	tree.TestMaxDepth()
+}
+
+func TestDuplicates(t *testing.T)  {
+	//two_pointer.RemoveDuplicates([]int{1, 2, 2, 3, 4})
+	two_pointer.RemoveDuplicates([]int{0,0,1,1,1,2,2,3,3,4})
 }
