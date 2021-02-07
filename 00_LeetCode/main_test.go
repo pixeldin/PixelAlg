@@ -44,7 +44,10 @@ func TestTree(t *testing.T) {
 	tree.TestMaxDepth()
 }
 
-func TestDuplicates(t *testing.T)  {
-	//two_pointer.RemoveDuplicates([]int{1, 2, 2, 3, 4})
-	two_pointer.RemoveDuplicates([]int{0,0,1,1,1,2,2,3,3,4})
+func TestDuplicates(t *testing.T) {
+	// 双指针去重
+	//two_pointer.RemoveDuplicates([]int{0,0,1,1,1,2,2,3,3,4})
+
+	// 双指针去除指定
+	two_pointer.RemoveElement([]int{3, 2, 2, 3}, 3)
 }

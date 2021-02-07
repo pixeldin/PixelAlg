@@ -2,26 +2,21 @@ package two_pointer
 
 import "fmt"
 
-func RemoveDuplicates(nums []int)  {
-	duplicates := removeDuplicates(nums)
+func RemoveDuplicates(nums []int) {
+	duplicates := removeDuplicates_local(nums)
 	fmt.Println(duplicates)
 }
 
-func removeDuplicates(nums []int) int {
-	if len(nums) <= 1 {
-		return len(nums)
-	}
-
-	//def := len(nums)
-	for i,j := 0,1; j < len(nums); j++ {
-		if nums[j] == nums[i] {
-			//def--
-			nums = append(nums[:i], nums[i+1:]...)
-			//i = j
-			j--
-		} else {
-			i++
+/*
+	思路: 找到第一个`不重复`的元素覆盖第一个`重复`的元素
+*/
+func removeDuplicates_local(nums []int) int {
+	f := 0
+	for i := 1; i < len(nums); i++ {
+		if nums[f] != nums[i] {
+			f++
+			nums[f] = nums[i]
 		}
 	}
-	return len(nums)
+	return f + 1
 }
