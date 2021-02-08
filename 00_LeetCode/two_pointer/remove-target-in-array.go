@@ -9,7 +9,7 @@ func RemoveElement(nums []int, tar int) {
 
 // 1 2 2 3 2,  2
 /*
-	思路: 首位双指针, 如果遇到目标元素,用尾元素覆盖, 知道
+	思路: 首尾双指针,如果遇到目标元素,用尾元素覆盖,直到
 	两指针碰头
 */
 func removeElement(nums []int, val int) int {
@@ -20,6 +20,7 @@ func removeElement(nums []int, val int) int {
 			nums[i] = nums[l-1]
 			l--
 		} else {
+			// 只有没有覆盖才移动首指针,因为需要初次比较
 			i++
 		}
 	}

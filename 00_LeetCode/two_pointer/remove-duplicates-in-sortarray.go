@@ -14,6 +14,7 @@ func removeDuplicates_local(nums []int) int {
 	f := 0
 	for i := 1; i < len(nums); i++ {
 		if nums[f] != nums[i] {
+			// 找到和当前不一样的元素
 			f++
 			nums[f] = nums[i]
 		}

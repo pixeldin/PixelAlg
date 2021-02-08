@@ -49,5 +49,7 @@ func TestDuplicates(t *testing.T) {
 	//two_pointer.RemoveDuplicates([]int{0,0,1,1,1,2,2,3,3,4})
 
 	// 双指针去除指定
-	two_pointer.RemoveElement([]int{3, 2, 2, 3}, 3)
+	//two_pointer.RemoveElement([]int{3, 2, 2, 3}, 3)
+	// 移除0元素, 保持相对顺序(稳定)
+	two_pointer.MoveZeroes([]int{0, 0, 1, 1, 0, 2, 0, 3, 3, 0})
 }
