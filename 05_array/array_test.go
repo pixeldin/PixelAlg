@@ -1,6 +1,7 @@
 package _5_array
 
 import (
+	"fmt"
 	"testing"
 )
 
@@ -56,4 +57,24 @@ func TestFind(t *testing.T) {
 	t.Log(arr.Find(0))
 	t.Log(arr.Find(9))
 	t.Log(arr.Find(11))
+}
+
+var SrcArray = []int{1, 2, 3, 3, 4, 4, 5}
+
+func TestSearchByDiv(t *testing.T) {
+	div := SearchByDiv(4, SrcArray)
+	fmt.Println(div)
+	div = SearchByDiv(1, SrcArray)
+	fmt.Println(div)
+	div = SearchByDiv(5, SrcArray)
+	fmt.Println(div)
+	div = SearchByDiv(9, SrcArray)
+	fmt.Println(div)
+}
+
+func TestBinarySearch(t *testing.T) {
+	search := BinarySearch(SrcArray, 1, 0, len(SrcArray)-1)
+	fmt.Println(search)
+	search = BinarySearch(SrcArray, 5, 0, len(SrcArray)-1)
+	fmt.Println(search)
 }
