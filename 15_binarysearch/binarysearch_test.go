@@ -1,6 +1,9 @@
 package _5_binarysearch
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestBinarySearch(t *testing.T) {
 	var a []int
@@ -100,4 +103,37 @@ func TestBinarySearchLastLT(t *testing.T) {
 	if BinarySearchLastLT(a, 4) != 4 {
 		t.Fatal(BinarySearchLastLT(a, 4))
 	}
+}
+
+var SrcArray = []int{5, 7, 7, 8, 8, 10}
+
+func TestSearchByDiv(t *testing.T) {
+	div := SearchByDiv(4, SrcArray)
+	fmt.Println(div)
+	div = SearchByDiv(1, SrcArray)
+	fmt.Println(div)
+	div = SearchByDiv(5, SrcArray)
+	fmt.Println(div)
+	div = SearchByDiv(9, SrcArray)
+	fmt.Println(div)
+}
+
+func TestBinarySearchV2(t *testing.T) {
+	search := BinarySearchV2(SrcArray, 1, 0, len(SrcArray)-1)
+	fmt.Println(search)
+	search = BinarySearchV2(SrcArray, 5, 0, len(SrcArray)-1)
+	fmt.Println(search)
+}
+
+func TestSqrt(t *testing.T) {
+	sqrt := Sqrt(6)
+	fmt.Println(sqrt)
+	sqrt = Sqrt(2)
+	fmt.Println(sqrt)
+}
+
+func TestSearchRange(t *testing.T) {
+	//SearchRange(SrcArray, -10)
+	SearchRange([]int{1}, 1)
+	SearchRange(SrcArray, 8)
 }
