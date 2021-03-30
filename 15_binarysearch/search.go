@@ -1,9 +1,9 @@
-package _5_array
+package _5_binarysearch
 
 /*
 	二分查找
 	1234567
-	0, 7
+	0, 6
 	mid := 3
 */
 func SearchByDiv(tar int, src []int) int {
@@ -22,7 +22,7 @@ func SearchByDiv(tar int, src []int) int {
 	return idx
 }
 
-func BinarySearch(src []int, tar, l, r int) int {
+func BinarySearchV2(src []int, tar, l, r int) int {
 	if l > r {
 		return -1
 	}
@@ -30,8 +30,8 @@ func BinarySearch(src []int, tar, l, r int) int {
 	if src[mid] == tar {
 		return mid
 	} else if src[mid] > tar {
-		return BinarySearch(src, tar, l, mid-1)
+		return BinarySearchV2(src, tar, l, mid-1)
 	} else {
-		return BinarySearch(src, tar, mid+1, r)
+		return BinarySearchV2(src, tar, mid+1, r)
 	}
 }
