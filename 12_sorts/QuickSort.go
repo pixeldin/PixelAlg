@@ -34,15 +34,15 @@ func partition(arr []int, start, end int) int {
 	return i
 }
 
-func Qc(arr []int, l, r int) {
+func qs(arr []int, l, r int) {
 	//l, r := 0, len(arr)
 	if l >= r {
 		return
 	}
 	// 划分中界
 	p := pt(arr, l, r)
-	Qc(arr, l, p-1)
-	Qc(arr, p+1, r)
+	qs(arr, l, p-1)
+	qs(arr, p+1, r)
 	return
 }
 
