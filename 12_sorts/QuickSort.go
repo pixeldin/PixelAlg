@@ -33,3 +33,31 @@ func partition(arr []int, start, end int) int {
 
 	return i
 }
+
+func Qc(arr []int, l, r int) {
+	//l, r := 0, len(arr)
+	if l >= r {
+		return
+	}
+	// 划分中界
+	p := pt(arr, l, r)
+	Qc(arr, l, p-1)
+	Qc(arr, p+1, r)
+	return
+}
+
+func pt(arr []int, l, r int) int {
+	point := arr[r]
+	i := l
+	for j := l; j < r; j++ {
+		if arr[j] < point {
+			if i != j {
+				// 交换
+				arr[j], arr[i] = arr[i], arr[j]
+			}
+			i++
+		}
+	}
+	arr[r], arr[i] = arr[i], arr[r]
+	return i
+}
