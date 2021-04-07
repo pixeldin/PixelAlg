@@ -35,3 +35,7 @@ func TestTopK(t *testing.T) {
 	fmt.Println(FindKthLargest(arr, 5))
 	fmt.Println(FindKthLargest(arr, 8))
 }
+
+func TestSortColor(t *testing.T) {
+	SortColors([]int{1, 2, 1, 0, 1, 2, 0, 1})
+}
