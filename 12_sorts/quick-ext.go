@@ -1,7 +1,5 @@
 package _2_sorts
 
-import "fmt"
-
 // 快排拓展
 /*
 	215. 寻找第k大元素
@@ -44,19 +42,36 @@ func partFork(arr []int, l, r int) int {
 
 // 75. 颜色排序, 思路: 计数排序/3路快排
 func SortColors(nums []int) {
-	i := rankColor(nums, 0, len(nums)-1, 2)
-	i = rankColor(nums, 0, len(nums)-1, 1)
-	i = rankColor(nums, 0, len(nums)-1, 0)
-	fmt.Println(i)
+	rankColor(nums, 0, len(nums)-1)
 }
 
-func rankColor(arr []int, l, r, k int) int {
-	p := partFork(arr, l, r)
-	if p == k {
-		return p
-	} else if p > k {
-		// 偏小, 往左边找 (注意是倒序)
-		return rankColor(arr, l, p-1, k)
+func rankColor(arr []int, l, r int) {
+	if l >= r {
+		return
 	}
-	return rankColor(arr, p+1, r, k)
+	i, j := partForThird(arr, l, r)
+	// 偏小, 往左边找 (注意是倒序)
+	rankColor(arr, l, i)
+	rankColor(arr, j, l)
+}
+
+// partForThird 三路快排
+// 拆分区间
+// [l,i] [i,j] [j,l]
+func partForThird(arr []int, l, r int) (int, int) {
+	i := l
+	j := r
+	// todo...
+	//point := arr[r]
+	//for j := l; j < r; j++ {
+	//	// (注意是倒序)
+	//	if arr[j] > point {
+	//		if i != j {
+	//			arr[i], arr[j] = arr[j], arr[i]
+	//		}
+	//		i++
+	//	}
+	//}
+	//arr[i], arr[r] = arr[r], arr[i]
+	return i, j
 }
