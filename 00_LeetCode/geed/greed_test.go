@@ -6,8 +6,8 @@ import (
 )
 
 var (
-	//COIN = []int{1,2,5}
-	COIN = []int{2}
+	COIN = []int{1, 2, 5}
+	//COIN = []int{2}
 )
 
 func TestJustPrint(t *testing.T) {
