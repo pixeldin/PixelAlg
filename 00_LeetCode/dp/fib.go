@@ -1,13 +1,13 @@
 package dp
 
-func GetFibSum(n int) int {
+func getFibSum(n int) int {
 	if n <= 0 {
 		return 0
 	}
 	if n == 1 {
 		return 1
 	}
-	return GetFibSum(n-1) + GetFibSum(n-2)
+	return getFibSum(n-1) + getFibSum(n-2)
 }
 
 // 509. 剪枝法

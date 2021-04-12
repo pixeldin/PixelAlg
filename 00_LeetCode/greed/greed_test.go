@@ -1,4 +1,4 @@
-package geed
+package greed
 
 import (
 	"fmt"

@@ -12,8 +12,8 @@ func TestClimbStairs(t *testing.T) {
 
 func TestIsSubsequence1(t *testing.T) {
 	//fmt.Println(IsSubsequence1("abcd", "sabc123abcd"))
-	fmt.Println(GetFibSum(2))
-	fmt.Println(GetFibSum(5))
+	fmt.Println(getFibSum(2))
+	fmt.Println(getFibSum(5))
 	fmt.Println(GotFibSumWithMark(2))
 	fmt.Println(GotFibSumWithMark(5))
 }
