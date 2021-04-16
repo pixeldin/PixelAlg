@@ -9,7 +9,7 @@ func buildLocalTree() *TreeNode {
 	d := BuildTreeWithThree(4, 8, 9)
 	e := BuildTreeWithThree(5, 10, 11)
 	f := BuildTreeWithThree(6, 12, 13)
-	g := BuildTreeWithThree(7, 12, 13)
+	g := BuildTreeWithThree(7, 15, 16)
 	a.Left = b
 	a.Right = c
 

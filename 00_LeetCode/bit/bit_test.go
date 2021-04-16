@@ -1,6 +1,7 @@
 package bit
 
 import (
+	"fmt"
 	"testing"
 )
 
@@ -61,4 +62,15 @@ func countBits(num int) []int {
 		ret[i] = ret[i&(i-1)] + 1
 	}
 	return ret
+}
+
+// 获取num前n位二进制(右往左)
+func getFirstNBitFromRight(num, n int) {
+	mask := 1<<n - 1
+	ret := num & mask
+	fmt.Printf("Binary arry: %b\n", ret)
+}
+
+func TestFirstNBit(t *testing.T) {
+	getFirstNBitFromRight(8, 4)
 }
