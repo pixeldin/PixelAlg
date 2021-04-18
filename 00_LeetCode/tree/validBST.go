@@ -38,22 +38,3 @@ func isValidBST_(root *TreeNode, min, max float64) bool {
 	v := float64(root.Val)
 	return v < max && v > min && isValidBST_(root.Left, min, v) && isValidBST_(root.Right, v, max)
 }
-
-func BuildTreeWithThree(rootVal, leftVal, rightVal int) *TreeNode {
-	left := TreeNode{
-		leftVal,
-		nil,
-		nil,
-	}
-	right := TreeNode{
-		rightVal,
-		nil,
-		nil,
-	}
-	root := TreeNode{
-		rootVal,
-		&left,
-		&right,
-	}
-	return &root
-}
