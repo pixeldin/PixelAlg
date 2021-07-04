@@ -5,6 +5,31 @@ import (
 	"testing"
 )
 
+func TestPrint(t *testing.T) {
+	printMaxAndMinWithInt()
+	i := reverse(0)
+	t.Log(i)
+	i = reverse(87654321)
+	t.Log(i)
+
+	// max
+	i = reverse(7463847412)
+	t.Log(i)
+
+	// min
+	i = reverse(-8463847412)
+	t.Log(i)
+
+	// overflow max
+	i = reverse(8463847412)
+	t.Log(i)
+
+	// overflow min
+	i = reverse(-9463847412)
+	t.Log(i)
+
+}
+
 func TestSubsets(t *testing.T) {
 	//subsets := Subsets([]int{3, 5, 7})
 	//fmt.Println(subsets)
