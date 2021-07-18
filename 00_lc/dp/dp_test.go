@@ -1,7 +1,7 @@
 package dp
 
 import (
-	"PixelAlg/00_LeetCode/tree"
+	"PixelAlg/00_lc/tree"
 	"fmt"
 	"log"
 	"testing"

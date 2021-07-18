@@ -1,8 +1,8 @@
 package dp
 
 import (
-	"PixelAlg/00_LeetCode/tree"
-	"PixelAlg/00_LeetCode/util"
+	"PixelAlg/00_lc/tree"
+	"PixelAlg/00_lc/util"
 	"fmt"
 )
 

@@ -1,7 +1,7 @@
 package tree
 
 import (
-	"PixelAlg/00_LeetCode/util"
+	"PixelAlg/00_lc/util"
 	"fmt"
 )
 

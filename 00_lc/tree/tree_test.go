@@ -24,5 +24,18 @@ func buildLocalTree() *TreeNode {
 
 func TestLevelOrder(t *testing.T) {
 	tree := buildLocalTree()
-	levelOrder(tree)
+	//levelOrder(tree)
+	zigzagLevelOrder(tree)
+}
+
+func TestNumTree(t *testing.T) {
+	numTrees(3)
+}
+
+func TestIsBlancedTree(t *testing.T) {
+	//tr := CreateBinTreeWithArray(&[]int{1,2,3,4,-1,-1,4,-1,-1,3,-1,-1,2,-1,-1})
+	//tr := CreateBinTreeWithArray(&[]int{1,-1,2,-1,3,-1,-1})
+	//tr := CreateBinTreeWithArray(&[]int{1,2,4,8,-1,-1,-1,5,-1,-1,3,6,-1,-1,-1})
+	tr := CreateBinTreeWithArray(&[]int{1, 0, 2, 0, 3, 0, 0}, 0)
+	t.Log(isBalanced(tr))
 }

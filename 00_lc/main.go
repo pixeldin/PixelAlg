@@ -1,7 +1,7 @@
 package main
 
 import (
-	arr "PixelAlg/00_LeetCode/array"
+	arr "PixelAlg/00_lc/array"
 	"fmt"
 )
 

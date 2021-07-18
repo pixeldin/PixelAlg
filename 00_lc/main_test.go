@@ -1,10 +1,10 @@
 package main
 
 import (
-	arr "PixelAlg/00_LeetCode/array"
-	string2 "PixelAlg/00_LeetCode/string"
-	"PixelAlg/00_LeetCode/tree"
-	"PixelAlg/00_LeetCode/two_pointer"
+	arr "PixelAlg/00_lc/array"
+	string2 "PixelAlg/00_lc/string"
+	"PixelAlg/00_lc/tree"
+	"PixelAlg/00_lc/two_pointer"
 	"fmt"
 	"testing"
 )

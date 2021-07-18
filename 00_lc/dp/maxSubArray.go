@@ -1,6 +1,6 @@
 package dp
 
-import "PixelAlg/00_LeetCode/util"
+import "PixelAlg/00_lc/util"
 
 /*
 	思路:
