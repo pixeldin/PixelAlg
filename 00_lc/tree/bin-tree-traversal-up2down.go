@@ -23,6 +23,7 @@ func levelOrder(root *TreeNode) [][]int {
 	return ret
 }
 
+// 正序
 func markTreeLvl(node *TreeNode, ret *[][]int, lvl int) {
 	//fmt.Println(node.Val)
 	if len(*ret) < lvl+1 {
@@ -36,5 +37,26 @@ func markTreeLvl(node *TreeNode, ret *[][]int, lvl int) {
 	}
 	if node.Right != nil {
 		markTreeLvl(node.Right, ret, lvl)
+	}
+}
+
+func markReverseTreeLvl(node *TreeNode, ret *[][]int, lvl int) {
+	if len(*ret) < lvl+1 {
+		lv := make([]int, 0)
+		*ret = append(*ret, lv)
+	}
+
+	// 反插
+	(*ret)[lvl] = append((*ret)[lvl], node.Val)
+	//size := len(*ret) + 1
+	//idx := size - lvl
+	//
+	//(*ret)[idx] = append((*ret)[idx], node.Val)
+	lvl++
+	if node.Left != nil {
+		markReverseTreeLvl(node.Left, ret, lvl)
+	}
+	if node.Right != nil {
+		markReverseTreeLvl(node.Right, ret, lvl)
 	}
 }
