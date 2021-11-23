@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-23T08:17:20.025Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="6wduzsav0Oitr-l2_Ty6" version="15.4.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-23T10:09:29.755Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="Qvhnjb6NHYxzpmMiwRKH" version="15.4.1" type="github">
   <diagram id="COLGENjFSGerEnKKBjg_" name="Page-1">
     <mxGraphModel dx="1422" dy="1162" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="2339" pageHeight="3300" background="#ffffff" math="0" shadow="1">
       <root>
@@ -157,6 +157,9 @@
         <mxCell id="BR6qhdVHbsdKvwHrEbUl-34" value="SIGQUIT" style="text;strokeColor=none;fillColor=none;html=1;fontSize=20;fontStyle=1;verticalAlign=middle;align=center;fontColor=#FF3333;" vertex="1" parent="1">
           <mxGeometry x="755" y="1391" width="108" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="BR6qhdVHbsdKvwHrEbUl-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;fontSize=19;fontColor=#FFFF66;strokeWidth=3;" edge="1" parent="1" source="BR6qhdVHbsdKvwHrEbUl-37" target="BR6qhdVHbsdKvwHrEbUl-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="BR6qhdVHbsdKvwHrEbUl-37" value="&lt;font color=&quot;#ffff66&quot;&gt;写入pid作为下一轮父进程&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#76608a;sketch=1;fontSize=20;fontColor=#ffffff;strokeColor=#432D57;fillStyle=solid;" vertex="1" parent="1">
           <mxGeometry x="1180" y="1310" width="132" height="76" as="geometry" />
         </mxCell>
@@ -164,10 +167,21 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="BR6qhdVHbsdKvwHrEbUl-41" value="&lt;b&gt;&lt;font color=&quot;#b266ff&quot;&gt;开发人员&lt;/font&gt;&lt;/b&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;rounded=1;shadow=1;glass=0;fontSize=19;fontColor=#FF6666;fillColor=default;gradientDirection=south;" vertex="1" parent="1">
-          <mxGeometry x="806" y="988" width="62" height="88" as="geometry" />
+          <mxGeometry x="826" y="999" width="42" height="77" as="geometry" />
         </mxCell>
         <mxCell id="BR6qhdVHbsdKvwHrEbUl-47" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;dashed=1;fontSize=19;fontColor=#FF3333;strokeWidth=3;" edge="1" parent="1" source="BR6qhdVHbsdKvwHrEbUl-32" target="BR6qhdVHbsdKvwHrEbUl-32">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BR6qhdVHbsdKvwHrEbUl-51" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;fontSize=19;fontColor=#FFFF66;strokeWidth=3;curved=1;strokeColor=#FFD966;" edge="1" parent="1" source="BR6qhdVHbsdKvwHrEbUl-49" target="BR6qhdVHbsdKvwHrEbUl-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1246" y="1570" />
+              <mxPoint x="355" y="1570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BR6qhdVHbsdKvwHrEbUl-49" value="fork新进程" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fontSize=20;strokeColor=#ae4132;strokeWidth=2;fillColor=#fad9d5;sketch=1;fillWeight=4;hachureGap=8;hachureAngle=45;fillStyle=solid;" vertex="1" parent="1">
+          <mxGeometry x="1189.5" y="1425" width="113" height="109" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
